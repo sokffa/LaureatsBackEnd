@@ -27,6 +27,14 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#Email Credentials Definition
+DEFAULT_FROM_EMAIL = 'example@gmail.com'
+SERVER_EMAIL = 'example@gmail.com'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'example@gmail.com'
+EMAIL_HOST_PASSWORD = 'password'
 
 # Application definition
 REST_FRAMEWORK = {
@@ -83,7 +91,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'Laureats',
         'USER':'root',
-        'PASSWORD':'sokffa1797',
+        'PASSWORD':'',
         'HOST':'localhost',
         'PORT':'3306'
     }
@@ -108,13 +116,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-DEFAULT_FROM_EMAIL = 's.mahmoud97@gmail.com'
-SERVER_EMAIL = 's.mahmoud97@gmail.com'
-EMAIL_USE_TLS = True
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 's.mahmoud97@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
