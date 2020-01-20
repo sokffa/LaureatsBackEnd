@@ -19,4 +19,6 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path(r'events/', views.EventViewSet.as_view()),
     path(r'send_email/', views.SendEmailViewSet.as_view()),
+    path(r'stats/', views.StatsViewSet.as_view()),
+
 ]
